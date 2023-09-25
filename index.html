@@ -9,10 +9,27 @@
 </head>
 
 <body>
-   <h1>Hello world</h1>
+   <main class="main-container">
+      <h1 class="heading">Check your BMI</h1>
+      <p class="heading-description">Enter your weight and height below to check BMI results</p>
+      <form action="#" class="bmi-form">
+         <div class="bmi-input-box">
+            <label for="weight">Put your weight in here (KG)</label>
+            <input type="number" name="weight" id="weight" placeholder="60" min="1">
+         </div>
+         <div class="bmi-input-box">
+            <label for=" height">And your height in here (CM)</label>
+            <input type="number" name="height" id="height" placeholder="167" min="1">
+         </div>
+         <button type="submit" id="submit" class="bmi-button bmi-button-disabled">Calculate BMI</button>
+      </form>
+
+      <div class="bmi-result hidden">
+      </div>
+   </main>
 
 
-   <script src="scripts.js"></script>
+   <script src=" scripts.js"></script>
 </body>
 
 </html>

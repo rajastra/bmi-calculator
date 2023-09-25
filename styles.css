@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  background: #ffff;
+  display: grid;
+  place-items: center;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 84px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.heading {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.heading-description {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  color: #414e5a;
+}
+
+.bmi-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.bmi-input-box {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.bmi-input-box label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #414e5a;
+}
+
+.bmi-input-box input {
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid #d1d5db;
+  font-size: 16px;
+  font-weight: 500;
+  outline: none;
+}
+
+.bmi-input-box input:focus {
+  border: 1px solid #6557f5;
+}
+
+.bmi-input-box input::placeholder {
+  color: #7b848d71;
+}
+
+.bmi-button {
+  align-self: flex-start;
+  padding: 12px 16px;
+  border-radius: 4px;
+  border: none;
+  background: #6557f5;
+  color: #ffff;
+  cursor: pointer;
+}
+
+.bmi-button:hover {
+  background: #4d3df5;
+}
+
+.bmi-button-disabled {
+  background: #d1d5db;
+  color: #ffff;
+  cursor: not-allowed;
+}
+
+.bmi-button-disabled:hover {
+  background: #d1d5db;
+}
+
+.hidden {
+  display: none;
+}
+
+.bmi-result {
+  margin-top: 24px;
+}
+
+.bmi-result p {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.bmi-result p span {
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    padding: 12px;
+  }
+
+  .heading {
+    font-size: 26px;
+  }
+
+  .heading-description {
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    color: #414e5a;
+  }
+
+  .bmi-form {
+    gap: 16px;
+    margin-top: 16px;
+  }
+
+  .bmi-input-box label {
+    font-size: 12px;
+    font-weight: 500;
+    color: #414e5a;
+  }
+
+  .bmi-result p {
+    font-size: 12px;
+    font-weight: 500;
+  }
+}
