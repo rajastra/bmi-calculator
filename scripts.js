@@ -31,7 +31,7 @@ function calculateBMI(event) {
   bmiResult.innerHTML = '';
   const weight = weightInput.value;
   const height = heightInput.value;
-  const bmi = weight / (height / weight);
+  const bmi = weight / Math.pow(height / 100, 2);
   bmiResult.classList.remove('hidden');
   bmiResult.insertAdjacentHTML(
     'beforeend',
